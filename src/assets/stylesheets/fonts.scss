@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "PTRootUI";
+  src: url("assets/fonts/PTRootUIRegular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("assets/fonts/PTRootUIMedium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("assets/fonts/PTRootUIBold.ttf");
+  font-weight: 700;
+}
+
+
+.paragraph {
+  font-family: PTRootUI, serif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+}

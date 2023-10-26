@@ -1,0 +1,12 @@
+.frame {
+  border: $border-size $border-style $border-color;
+  border-radius: 30px;
+  background: #ffffff;
+  width: fit-content;
+}
+
+.frame-container {
+  margin: 10px;
+  border: $border-size $border-style $border-color;
+  border-radius: 20px;
+}

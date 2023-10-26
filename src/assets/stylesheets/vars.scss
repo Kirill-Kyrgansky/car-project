@@ -1,0 +1,9 @@
+
+
+$background: #F8F4F1;
+$border-color: #000;
+$border-size: 2px;
+$border-style: solid;
+@mixin border-color {
+  border: 2px solid #000;
+}

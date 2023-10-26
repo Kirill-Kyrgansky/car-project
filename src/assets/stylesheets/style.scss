@@ -1,0 +1,17 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'vars.scss';
+@import 'basics.scss';
+@import 'main.scss';
+@import '../../templates/frame-border-container/frame-border-container';
+
+
+.section {
+  background-color: $background;
+  padding: 20px 90px;
+}
+
+.container {
+  background: #000;
+}
+

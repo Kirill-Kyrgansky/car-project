@@ -11,7 +11,7 @@ module.exports = {
         index: './src/index.js'
     },
     output: {
-        filename: '[name].[contenthash].js',
+        filename: '[name].[contentHash].js',
         path: path.resolve(__dirname, 'docs')
     },
     module: {
@@ -100,11 +100,58 @@ module.exports = {
             filename: './index.html'
         }),
 
+        // Section
+        new HtmlWebpackPlugin({
+            template: './src/sos.html',
+            filename: './sos.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/for-future.html',
+            filename: './for-future.html',
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/lifehacks.html',
+            filename: './lifehacks.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/helpful.html',
+            filename: './helpful.html'
+        }),
+
+
         // Article
-        // new HtmlWebpackPlugin({
-        //   template: './src/articles/superorganisms/S_Popup.html',
-        //   filename: './superorganisms/S_Popup.html'
-        // }),
+        new HtmlWebpackPlugin({
+            template: './src/sos/sos-article.html',
+            filename: './sos/sos-article.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/lifehacks/hack-article.html',
+            filename: './lifehacks/hack-article.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/helpful/help-article.html',
+            filename: './helpful/help-article.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/for-future/fut-article.html',
+            filename: './for-future/fut-article.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/for-future/carchoice.html',
+            filename: './for-future/carchoice.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            template: './src/for-future/pdd.html',
+            filename: './for-future/pdd.html'
+        }),
 
         // Partials
         new HtmlWebpackPartialsPlugin([
