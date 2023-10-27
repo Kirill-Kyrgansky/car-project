@@ -7,13 +7,11 @@ export class MyFrame extends HTMLElement {
                     <div class="frame-container">
                         <p class="paragraph" 
                         style='
-                            margin: 
-                                ${this.margin}'>
+                            margin: ${this.margin}'>
                             ${this.value}
                         </p>
                     </div>
             </div>`
-
     }
 
 }

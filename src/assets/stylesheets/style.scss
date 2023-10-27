@@ -13,8 +13,46 @@
 
 .container {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%
+  //margin-left: auto;
+  //margin-right: auto;
 }
 
+.header-right-link {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-menu {
+  border-radius: 28px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-menu:active {
+  border: 4px solid #FFF;
+  border-radius: 28px;
+}
+
+.about-project-link {
+  background: $about-project;
+}
+
+.promo-link {
+  background: $promo;
+
+}
+
+.platform-link {
+  background: $platform;
+}
+
+.about-project {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
