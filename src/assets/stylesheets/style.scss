@@ -5,6 +5,10 @@
 @import 'main.scss';
 @import '../../templates/frame-border-container/frame-border-container';
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 
 .section {
   background-color: $background;
@@ -13,8 +17,8 @@
 
 .container {
   max-width: 1440px;
-  //margin-left: auto;
-  //margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-right-link {
@@ -54,5 +58,192 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 40px;
-  grid-row-gap: 20px;
+  grid-row-gap: 50px;
+}
+
+.men-stop {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+  width: 100%;
+}
+
+.img-stop {
+  position: absolute;
+  right: 220px;
+  bottom: -40px;
+}
+
+.img-smile {
+  position: relative;
+  width: 100%;
+}
+
+.img-smile__arrow {
+  position: absolute;
+  bottom: 0;
+  left: 285px;
+}
+
+.img-smile__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frame-container__problem {
+  margin: 55px 70px;
+}
+
+.problem__wrap {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.problem__header {
+  display: flex;
+}
+
+.two-cars {
+  margin-right: 20px;
+}
+
+.problem__traffic-light {
+  display: flex;
+  padding-right: 50px;
+}
+
+.problem__traffic-light-text {
+  margin: 30px 0 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 250px;
+}
+
+.problem__about-problem {
+  max-width: 450px;
+  margin-left: 120px;
+}
+
+.reindeer {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.attention {
+  margin-bottom: 10px;
+}
+
+.problem {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.solution__header-text {
+  margin: 35px 80px;
+  display: flex;
+}
+
+.solution__arrow-down {
+  margin-left: 18px;
+}
+
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solution__wrap-text-block {
+  margin-top: 40px;
+  max-width: 430px;
+  text-align: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.solution__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solution__wrap-warning-wrap {
+  width: auto;
+  position: relative;
+}
+
+.solution__wrap-warning-wrap-img {
+  //width: 100%;
+  margin: 0 20px;
+}
+
+.solution__wrap-warning-wrap-text {
+  position: absolute;
+  top: 38%;
+  left: 17%;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer__wrap {
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__header {
+  display: flex;
+}
+
+.img-crosswalk {
+  margin-left: 35px;
+}
+
+.footer__connect {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.input {
+  border-radius: 19px;
+  background: #ECECEC;
+  border: none;
+  padding: 17px;
+  width: 100%;
+  min-width: 150px;
+}
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-media-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 8px;
+}
+
+.footer-wrap-container {
+  width: 70%;
+  margin-right: 50px;
+}
+
+.traffic-light {
+  width: 100%;
 }

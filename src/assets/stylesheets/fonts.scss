@@ -22,14 +22,38 @@
   font-weight: 500;
 }
 
-.paragraph-small {
+@media (max-width: 1080px) {
+.paragraph {
+  font-size: 23px;
+}
+}
+
+.paragraph-40 {
+  font-family: PTRootUI, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+.paragraph-24 {
   font-family: PTRootUI, serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
+}
 
+.paragraph-18 {
+  font-family: PTRootUI, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .text-white {
   color: #FFFFFF;
+}
+
+.bold {
+  font-weight: 700;
 }

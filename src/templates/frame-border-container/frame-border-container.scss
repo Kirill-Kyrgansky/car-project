@@ -2,11 +2,15 @@
   border: $border-size $border-style $border-color;
   border-radius: 30px;
   background: #ffffff;
-  width: fit-content;
+
+  //width: 100%;
 }
 
 .frame-container {
   margin: 8px;
   border: $border-size $border-style $border-color;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

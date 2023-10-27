@@ -1,174 +1,197 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset='UTF-8'>
+  <title>Title</title>
 </head>
 <body>
-<section class="section">
-<header class="header">
-    <div>
-        <div class="header-links-message">
-            <a href="">
-                <img src="assets/images/icons/tg.svg"
-                     alt="Наш телеграм канал @swoosh ">
-            </a>
-            <a href="">
-                <img
-                        src="assets/images/icons/vk.svg"
-                        alt="Наша страница в VK">
-            </a>
-        </div>
-        <div class="header-right-link">
-            <div class="header-menu about-project-link">
-                <p class="paragraph-small text-white">о проекте</p>
-            </div>
-            <div class="header-menu promo-link">
-                <p class="paragraph-small text-white">промо</p>
-            </div>
-            <div class="header-menu platform-link">
-                <p class="paragraph-small text-white">платформа</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <my-frame margin="12px 24px 14px 24px">
-            платформа для начинающих водителей
+<!--<section class='section'>-->
+<!--  <header class='header'>-->
+<!--    <div>-->
+<!--      <div class='header-links-message'>-->
+<!--        <a href=''>-->
+<!--          <img src='assets/images/icons/tg.svg'-->
+<!--               alt='Наш телеграм канал @swoosh '>-->
+<!--        </a>-->
+<!--        <a href=''>-->
+<!--          <img-->
+<!--            src='assets/images/icons/vk.svg'-->
+<!--            alt='Наша страница в VK'>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class='header-right-link'>-->
+<!--        <div class='header-menu about-project-link'>-->
+<!--          <p class='paragraph-small text-white'>о проекте</p>-->
+<!--        </div>-->
+<!--        <div class='header-menu promo-link'>-->
+<!--          <p class='paragraph-small text-white'>промо</p>-->
+<!--        </div>-->
+<!--        <div class='header-menu platform-link'>-->
+<!--          <p class='paragraph-small text-white'>платформа</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class='container'>-->
+<!--      <my-frame margin='12px 24px 14px 24px'>-->
+<!--        платформа для начинающих водителей-->
+<!--      </my-frame>-->
+<!--    </div>-->
+<!--  </header>-->
+<!--</section>-->
+<div class='main'>
+  <section class='section'>
+    <div class='container'>
+      <div class='about-project'>
+        <my-frame style='max-width: 550px' margin='35px 50px 35px 50px'>
+          <p>мы — проект для тех, кто ещё не чувствует себя уверенно на дороге</p>
         </my-frame>
-    </div>
-</header>
-</section>
-<div class="main">
-    <section class="section">
-        <div class="container">
-            <div class="about-project">
-                <my-frame margin="12px 24px 14px 24px">
-                    <p>мы — проект для тех, кто ещё не чувствует себя уверенно на дороге</p>
-                </my-frame>
-                <div>
-                    <img src="assets/images/men.svg"
-                         alt="">
-                    <img src="assets/images/stop.svg"
-                         alt="">
-                </div>
-                <div>
-                    <img src="assets/images/smile.svg"
-                         alt="">
-                    <img src="assets/images/arrow.svg"
-                         alt="">
-                </div>
-                <my-frame margin="12px 24px 14px 24px">
-                    здесь вы найдёте: сборники ПДД, SOS номера, разные подборки полезной информации
-                    и, конечно, наш журнал
-                </my-frame>
-            </div>
+        <div class='men-stop'>
+          <img src='assets/images/men.svg'
+               alt=''>
+          <img src='assets/images/stop.svg'
+               alt='' class='img-stop'>
         </div>
-    </section>
+        <div class='img-smile'>
+          <img src='assets/images/smile.svg'
+               alt=''>
+          <img src='assets/images/arrow.svg'
+               alt='' class='img-smile__arrow'>
+        </div>
+        <div class='img-smile__text'>
+          <my-frame margin='45px'>
+            здесь вы найдёте: сборники ПДД, SOS номера, разные подборки полезной информации
+            и, конечно, наш журнал
+          </my-frame>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-<section class="section">
-    <div class="container problem">
-        <div class="frame">
-            <div class="frame-container">
-                <div class="problem__header">
-                    <img src="assets/images/two-cars.svg"
-                         alt="">
-                    <h2>ПРОБЛЕМА</h2>
-                </div>
-                <div>
-                    <div class="problem__traffic-light">
-                        <img src="assets/images/traffic-light.png"
-                             alt="">
-                        <p>Неуверенно чувствуют себя на дороге</p>
-                        <p>Чувствуют, что им недостаёт некоторых знаний</p>
-                        <p>Хорошо ориентируются в правилах вождения</p>
-                    </div>
-                    <div class="problem__about-problem">
-                        <img src="assets/images/attention.svg"
-                             alt="">
-                        <p class="paragraph-small">современные курсы по вождению зачастую скучные
-                                                   и однообразные,
-                                                   что может
-                                                   привести к невниманию к материалу и дальнейшим
-                                                   проблемам на дороге.</p>
-                        <img src="assets/images/reindeer.svg"
-                             alt="">
-                        <p class="paragraph-small">статистика говорит о том, что большинство людей,
-                                                   прошедших курсы
-                                                   автошколы, все равно не уверены в своих навыках
-                                                   вождения</p>
-                    </div>
-                </div>
+<section class='section'>
+  <div class='container problem'>
+    <div class='frame margin-center problem block-center'>
+      <div class='frame-container'>
+        <div class='frame-container__problem'>
+          <div class='problem__header'>
+            <img src='assets/images/two-cars.svg'
+                 alt='' class='two-cars'>
+            <h2 class='paragraph-40'>ПРОБЛЕМА</h2>
+          </div>
+          <div class='problem__wrap'>
+            <div class='problem__traffic-light'>
+              <img src='assets/images/traffic-light.png'
+                   alt='' class='traffic-light'>
+              <div class='problem__traffic-light-text'>
+                <p class='paragraph-18'>Неуверенно чувствуют себя на дороге</p>
+                <p class='paragraph-18'>Чувствуют, что им недостаёт некоторых знаний</p>
+                <p class='paragraph-18'>Хорошо ориентируются в правилах вождения</p>
+              </div>
             </div>
+            <div class='problem__about-problem'>
+              <img src='assets/images/attention.svg'
+                   alt='' class='attention'>
+              <p class='paragraph-24'>современные курсы по вождению зачастую скучные
+                и однообразные,
+                что может
+                привести к невниманию к материалу и дальнейшим
+                проблемам на дороге.</p>
+              <img src='assets/images/reindeer.svg'
+                   alt='' class='reindeer'>
+              <p class='paragraph-24'>статистика говорит о том, что большинство людей,
+                прошедших курсы
+                автошколы, все равно не уверены в своих навыках
+                вождения</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
-<section class="section">
-    <div class="container solution">
-        <div class="solution__header">
-            <div class="frame">
-                <div class="frame-container">
-                </div>
-            </div>
+<section class='section'>
+  <div class='container solution'>
+    <div class='solution__header block-center flex'>
+      <div class='frame block-center '>
+        <div class='frame-container'>
+          <div class='solution__header-text'>
+            <h3 class='paragraph-40'>РЕШЕНИЕ</h3>
+            <img src='assets/images/arrow-down.svg' class='solution__arrow-down' alt=''>
+          </div>
         </div>
-        <div class="solution__wrap">
-            <div>
-                <my-frame margin="12px 24px 14px 24px">
-                    изучение ПДД
-                    в игровой форме
-                </my-frame>
-                <my-frame margin="12px 24px 14px 24px">
-                    советы и лайфхаки
-                </my-frame>
-            </div>
-            <div>
-                <img src="assets/images/warning.svg"
-                     alt="">
-                <p class="paragraph-small">полезный и интересный журнал о вождении </p>
-            </div>
-            <div>
-                <my-frame margin="12px 24px 14px 24px">
-                    все SOS-службы в одном месте
-                </my-frame>
-                <my-frame margin="12px 24px 14px 24px">
-                    помощь в выборе
-                    первого автомобиля
-                </my-frame>
-            </div>
-        </div>
+      </div>
+      <!--      <my-frame>-->
+      <!--        <h3 class='paragraph-40'>РЕШЕНИЕ</h3>-->
+      <!--        <img src='assets/images/arrow-down.svg' class='solution__arrow-down' alt=''>-->
+      <!--      </my-frame>-->
     </div>
+    <div class='solution__wrap'>
+      <div class='solution__wrap-text-block'>
+        <my-frame height='135px' margin='30px'>
+          изучение ПДД
+          в игровой форме
+        </my-frame>
+        <div class='mt-30'>
+          <my-frame height='135px' margin='30px'>
+            советы и лайфхаки
+          </my-frame>
+        </div>
+      </div>
+      <div class='solution__wrap-warning-wrap'>
+        <img src='assets/images/warning.svg'
+             alt='' class='solution__wrap-warning-wrap-img'>
+        <p class='paragraph-24 solution__wrap-warning-wrap-text'>полезный<br>и интересный журнал<br>о вождении </p>
+      </div>
+      <div class='solution__wrap-text-block'>
+        <my-frame height='135px' margin='30px'>
+          все SOS-службы в одном месте
+        </my-frame>
+        <div class='mt-30'>
+          <my-frame height='135px' margin='30px'>
+            помощь в выборе
+            первого автомобиля
+          </my-frame>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<footer class="section">
-    <div class="container footer">
-        <div class="frame">
-            <div class="frame-container">
-                <div class="footer__header">
-                    <p class="paragraph">УЗНАЙ ПЕРВЫМ О ЗАПУСКЕ</p>
-                    <img src="assets/images/crosswalk.svg"
-                         alt="">
-                </div>
-                <div class="footer__wrap">
-                    <input type="email"
-                           placeholder="e-mail:">
-                    <button class="submit-button">ПОДПИСАТЬСЯ</button>
-                </div>
-            </div>
-            <div class="footer__social-media">
-                <p></p>
-                <a href=""
-                   class="footer__social-media-links">
-                    <img src="assets/images/icons/tg.svg"
-                         alt="">
-                    TELEGRAM
-                </a>
-                <a href=""
-                   class="footer__social-media-links">
-                    <img src="assets/images/icons/vk.svg"
-                         alt="">
-                    ВКОНТАКТЕ
-                </a>
-            </div>
+<footer class='section'>
+  <div class='container footer'>
+    <div class='frame footer-wrap-container'>
+      <div class='frame-container footer__wrap '>
+        <div class='footer__header'>
+          <p class='paragraph-40'>УЗНАЙ ПЕРВЫМ О ЗАПУСКЕ</p>
+          <img src='assets/images/crosswalk.svg'
+               alt='' class='img-crosswalk'>
         </div>
+        <div class='footer__connect'>
+          <input type='email'
+                 placeholder='e-mail:' class='input mr-20'>
+          <button class='submit-button'>ПОДПИСАТЬСЯ</button>
+        </div>
+      </div>
+
     </div>
+    <div class='footer__social-media'>
+      <p class='paragraph-40'>МЫ В СОЦСЕТЯХ</p>
+      <a href=''
+         class='footer__social-media-links paragraph-24 bold'>
+        <img src='assets/images/icons/tg.svg'
+             alt=''
+             class='mr-20'
+        >
+        TELEGRAM
+      </a>
+      <a href=''
+         class='footer__social-media-links paragraph-24 bold '>
+        <img src='assets/images/icons/vk.svg'
+             alt=''
+             class='mr-20'
+        >
+        ВКОНТАКТЕ
+      </a>
+    </div>
+  </div>
 </footer>
 <!--<h2>Разделы</h2>-->
 <!--<ul>-->
