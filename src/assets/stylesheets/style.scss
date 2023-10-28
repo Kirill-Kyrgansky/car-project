@@ -41,12 +41,14 @@ hr {
 }
 
 .header-menu {
+  position: relative;
   border-radius: 28px;
-  padding-left: 20px;
+  padding-left: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 150px;
   cursor: pointer;
+  right: -170px;
 }
 
 .header-menu:active {
@@ -54,6 +56,10 @@ hr {
   border-radius: 28px;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.header-menu:hover {
+  right: -30px;
 }
 
 .about-project-link {
@@ -89,6 +95,8 @@ hr {
   position: absolute;
   right: 220px;
   bottom: -40px;
+  animation: vibrate-3 2.5s steps(35, end)  infinite alternate backwards;
+
 }
 
 .img-smile {
@@ -100,7 +108,39 @@ hr {
   position: absolute;
   bottom: 0;
   left: 285px;
+  animation: shake-lr 9s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
+
+.shake-lr {
+}
+
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
 
 .img-smile__text {
   display: flex;
@@ -293,25 +333,10 @@ hr {
 
 .about-project-link {
   position: relative;
-  right: -75px;
-}
-
-.about-project-link:hover {
-  right: -20px;
-}
-
-.promo-link {
-  position: relative;
-  right: -75px;
-}
-
-.promo-link:hover {
-  right: -20px;
 }
 
 .platform-link {
   position: relative;
-  right: -75px;
 }
 
 .platform-link:hover {
@@ -336,4 +361,85 @@ hr {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 80px;
+}
+
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.logo-car {
+  animation: slide-in-fwd-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@keyframes slide-in-fwd-top {
+  0% {
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.left-to-right-animation {
+  animation: slide-right 0.5s linear both;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.right-to-left-animation {
+  animation: slide-left 0.5s linear both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.solution__wrap-text-block-left {
+  left: -100px;
 }
