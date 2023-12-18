@@ -1,2 +1,76 @@
 @import "assets/stylesheets/style.scss";
+@import "assets/font/fonts";
 
+.main {
+  margin: 20px 0 100px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  //display: flex;
+}
+
+.radius-img {
+ border-radius: 20px;
+}
+
+.header-links__element {
+  padding: 20px 30px;
+  color: #000000;
+}
+
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 100%;
+
+}
+
+.item-0 {
+
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 5;
+
+}
+.item-1 {
+  padding: 50px;
+  background: rgba(29, 36, 42, 1);
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+
+}
+.item-2 {
+  max-width: 295px;
+
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 2;
+
+}
+.item-3 {
+  max-width: 295px;
+
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+
+}
