@@ -73,15 +73,6 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff|woff2)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[name].[ext]', // изменено
-          },
-        },
-      },
-      {
         test: /\.svg/,
         type: 'asset/resource',
         generator: {
@@ -89,11 +80,15 @@ module.exports = {
         }
       },
       {
-        test: /\.(ttf|otf)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
-        }
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'font/'
+            }}
+        ]
       }
     ]
   },
