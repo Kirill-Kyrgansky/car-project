@@ -2,6 +2,7 @@ export class MyFrame extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `<section class="section">
+  <div class='container'>
   <header class="header">
     <a href=''>
       <img src="../../assets/img/logo/dark-logo.svg" alt="">
@@ -18,6 +19,7 @@ export class MyFrame extends HTMLElement {
       </a>
     </div>
   </header>
+</div>
 </section>`
   }
 
