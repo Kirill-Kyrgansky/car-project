@@ -1,5 +1,5 @@
 @import "assets/stylesheets/style.scss";
-//@import "assets/font/fonts";
+@import "assets/font/fonts";
 
 .main {
   margin: 20px 0 100px 0;
@@ -105,7 +105,7 @@
 
 .item-01 {
 
-  background-color: #7FD5FF;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 1;
 
@@ -115,7 +115,7 @@
 }
 .item-11 {
 
-  background-color: #EE9AB7;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 3;
 
@@ -125,7 +125,7 @@
 }
 .item-21 {
 
-  background-color: #56C6CD;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 4;
 
@@ -146,7 +146,7 @@
 }
 
 .item-02 {
-  background-color: #9ACBB6;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 3;
 
@@ -155,7 +155,7 @@
 }
 .item-12 {
 
-  background-color: #BA6D7D;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 2;
 
@@ -166,7 +166,7 @@
 .item-22 {
 
 
-  background-color: #C855C5;
+  background-color: #BBE2FF;
   grid-row-start: 1;
   grid-column-start: 1;
 
@@ -192,4 +192,10 @@
 
 .icon-footer {
   margin-right: 15px;
+}
+
+.find-new-car {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
